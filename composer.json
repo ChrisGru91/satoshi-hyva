@@ -1,6 +1,6 @@
 {
-    "name": "scandiweb/satoshi",
-    "description": "Satoshi Theme for Magento 2 on Hyva - High-performance, user experience-focused theme",
+    "name": "chrisgru91/satoshi",
+    "description": "Forked Satoshi Theme for Magento 2 on Hyva",
     "type": "magento2-theme",
     "version": "2.0.0",
     "license": [

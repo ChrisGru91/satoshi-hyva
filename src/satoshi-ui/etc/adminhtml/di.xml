@@ -83,10 +83,10 @@
                     </item>
                     <item name="mode" xsi:type="string">inline</item>
                     <item name="minToolbarWidth" xsi:type="number">360</item>
-                    <item name="parentSelectorsToUnderlay" xsi:type="array">
+                    <!-- <item name="parentSelectorsToUnderlay" xsi:type="array">
                         <item name="0" xsi:type="string">.column-container</item>
                         <item name="1" xsi:type="string">.row-container</item>
-                    </item>
+                    </item> -->
                 </item>
             </argument>
         </arguments>

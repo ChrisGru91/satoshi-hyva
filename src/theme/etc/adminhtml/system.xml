@@ -17,6 +17,15 @@
                     <source_model>Satoshi\Theme\Model\Config\Source\NavigationType</source_model>
                 </field>
             </group>
+            <group id="demo_content" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="20" translate="label">
+                <label>Satoshi Demo Content</label>
+                <field id="show_homepage_demo_content" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                    showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Show Homepage Content</label>
+                    <comment>When disabled, this will remove the demo content from the Homepage.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
         </section>
     </system>
 </config>

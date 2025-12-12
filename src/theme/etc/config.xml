@@ -6,6 +6,9 @@
             <navigation>
                 <type>SPA</type>
             </navigation>
+            <demo_content>
+                <show_homepage_demo_content>1</show_homepage_demo_content>
+            </demo_content>
         </satoshi_theme_general>
     </default>
 </config>

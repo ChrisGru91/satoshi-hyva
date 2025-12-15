@@ -17,6 +17,15 @@
         <attribute name="class" value="gradient" />
         <attribute name="class" value="bg-bg-500" />
 
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/satoshi-gravesend_sans_bold.png</argument>
+                <argument name="logo_alt" xsi:type="string">Satoshi</argument>
+                <argument name="logo_width" xsi:type="number">189</argument>
+                <argument name="logo_height" xsi:type="number">64</argument>
+            </arguments>
+        </referenceBlock>
+
         <referenceContainer name="root">
             <block class="Magento\Framework\View\Element\Template" name="svg.filters" template="Magento_Theme::html/components/svg-filters.phtml" before="-" />
         </referenceContainer>

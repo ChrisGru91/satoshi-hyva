@@ -1,0 +1,138 @@
+<?php
+/**
+ * Hyvä Themes - https://hyva.io
+ * Copyright © Hyvä Themes. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+declare(strict_types=1);
+
+use Hyva\Theme\Model\ViewModelRegistry;
+use Hyva\Theme\ViewModel\LucideIcons;
+use Hyva\Theme\ViewModel\HyvaCsp;
+use Magento\Framework\Escaper;
+use Magento\Framework\View\Element\Template;
+
+/** @var Escaper $escaper */
+/** @var Template $block */
+/** @var ViewModelRegistry $viewModels */
+/** @var HyvaCsp $hyvaCsp */
+
+/** @var LucideIcons $lucideIcons */
+$lucideIcons = $viewModels->require(LucideIcons::class);
+?>
+
+<article>
+<div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" data-element="inner" data-pb-style="D95KQP7"><div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true"><style>
+.collection-container-x8f92 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.content-wrapper-a7d23 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.collection-heading-b9e45 {
+    font-size: 20px;
+    color: #333;
+    width: 100%;
+}
+
+.collection-description-c4f67 {
+    font-size: 14px;
+    color: #757575;
+    width: 100%;
+}
+
+.button-wrapper-e2h78 {
+    width: 100%;
+margin-top: 24px;
+}
+
+.button-icon-g5k12 {
+    margin-left: 8px;
+}
+
+.video-container-h8m45 {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.video-wrapper-i9n67 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(15deg);
+}
+
+.video-content-j2p89 {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+@media (max-width: 767px) {
+.video-container-h8m45 {
+    width: 120vw;
+}
+}
+
+@media (min-width: 768px) {
+    .collection-container-x8f92 {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        gap: 0;
+    }
+
+    .content-wrapper-a7d23 {
+        gap: 16px;
+        padding: 48px 0 48px 28px;
+        align-self: center;
+    }
+
+    .collection-heading-b9e45 {
+        font-size: 36px;
+    }
+
+    .video-container-h8m45 {
+        order: -1;
+        margin-top: 0;
+    }
+.button-wrapper-e2h78 {
+margin-top: 32px;
+}
+
+}
+</style>
+<div class="collection-container-x8f92">
+    <div class="content-wrapper-a7d23">
+        <h2 class="collection-heading-b9e45"><?= $escaper->escapeHtml(__('Fall 2025 Collection')) ?></h2>
+        <div>
+            <p class="collection-description-c4f67"><?= $escaper->escapeHtml(__('An invitation to venture away, the Satoshi Fall 2023 collection pays tribute to the passionate ties that unite Satoshi and India.')) ?></p>
+        </div>
+        <div class="button-wrapper-e2h78">
+            <a href="<?= $escaper->escapeUrl($block->getBaseUrl()) ?>men.html" class="button button--outline-primary" x-element-transition-trigger="">
+                <?= $escaper->escapeHtmlAttr(__('Explore More')) ?>
+            </a>
+        </div>
+    </div>
+    <div class="video-container-h8m45">
+        <div class="video-wrapper-i9n67">
+            <video tabindex="-1" class="video-content-j2p89" title="<?= $escaper->escapeHtmlAttr(__('Two women in a car, smiling')) ?>" src="<?= $escaper->escapeHtmlAttr($block->getViewFileUrl('media/video-2-compressed.mp4')) ?>" autoplay="" loop="" playsinline="" muted="" preload="none">
+            </video>
+        </div>
+    </div>
+</div></div></div></div>
+
+</article>

@@ -51,7 +51,7 @@ $selectedSort = $block->getData('selected_sort') ?? [];
                     title="<?= $escaper->escapeHtmlAttr(__('Remove sort %1 by: %2', $selectedSort['name'], $selectedSort['dir'])) ?>"
                 >
                     <span class="mr-2"><?= $escaper->escapeHtml(__($selectedSort['name'])) ?>:</span>
-                    <span><?= $escaper->escapeHtml($selectedSort['dir']) ?></span>
+                    <span><?= $escaper->escapeHtml(__($selectedSort['dir'])) ?></span>
                 </a>
             <?php endif; ?>
 

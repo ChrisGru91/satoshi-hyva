@@ -22,8 +22,8 @@ $selectedSort = [];
 $index = 0;
 if ($sorter) {
     foreach ($sorter->getAvailableOrders() as $key => $option) {
-        $sortOptions[] = ['value' => $key, 'name' => "{$option}, asc", 'dir' => 'asc'];
-        $sortOptions[] = ['value' => $key, 'name' => "{$option}, desc", 'dir' => 'desc'];
+        $sortOptions[] = ['value' => $key, 'name' => "{$option}, ". $escaper->escapeHtmlAttr(__('asc')), 'dir' => 'asc'];
+        $sortOptions[] = ['value' => $key, 'name' => "{$option}, ". $escaper->escapeHtmlAttr(__('desc')), 'dir' => 'desc'];
 
         if ($sorter->isOrderCurrent($key) && ($index !== 0 || $sorter->getCurrentDirection() !== 'asc')) {
             $selectedSort = ['value' => $key, 'name' => $option, 'dir' => $sorter->getCurrentDirection()];

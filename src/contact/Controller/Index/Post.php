@@ -150,7 +150,7 @@ class Post extends SourcePost
         }
 
         if($hasInvalidField) {
-            throw new LocalizedException(__('aaa'));
+            throw new LocalizedException(__('Please check the required fields.'));
         }
 
         if (trim($request->getParam('hideit', '')) !== '') {

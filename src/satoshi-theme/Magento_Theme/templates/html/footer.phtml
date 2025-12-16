@@ -21,12 +21,10 @@ $currencyViewModel = $viewModels->require(Currency::class);
 $block->setCacheKey('footer_currency_' . $currencyViewModel->getCurrentCurrencyCode());
 ?>
 
-<template x-portal="document.getElementById('footer-portal')">
+<div id="footer-portal" class="bg-bg-500">
     <div class="contents">
         <footer
             class="footer rounded-t-2xl md:bg-secondary-400"
-            x-cloak
-            :class="{ 'hidden': $store.main.isMobile && '<?= $block->getIsHomePage() ?>' !== '1' }"
         >
             <div class="flex w-full flex-col items-stretch gap-5 pb-5 md:gap-8 md:py-8">
                 <hr class="divider md:hidden">
@@ -45,4 +43,4 @@ $block->setCacheKey('footer_currency_' . $currencyViewModel->getCurrentCurrencyC
             </div>
         </footer>
     </div>
-</template>
+</div>
